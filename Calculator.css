@@ -1,0 +1,63 @@
+﻿body{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #474747;
+}
+
+input[type="text"]{
+    width: 325px;
+    height: 80px;
+    display: inline-block;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-color: #e6e6e6;
+    background-color: #e6e6e6;
+}
+
+input[type="button"]{
+    width: 82px;
+    height: 57px;
+    border-radius: 0;
+    float: left;
+    border: 0;
+    margin-right: 0.5px;
+    margin-bottom: 0.5px;
+    margin-top: 0.5px;
+}
+
+.buttons{
+    display: inline-block;
+    padding: 3px;
+    background-color: #e6e6e6;
+}
+
+
+/********************************************/
+/*Coloring the equal button Yellow*/
+#btn_eq{
+    background-color: #fed600;
+}
+
+/*Coloring the operators with dark gray*/
+.operation{
+    background-color: #f0f0f0;
+}
+
+/*Coloring the numbers with white bg*/
+input[type="button"]:not(.operation){
+    background-color: #fafafa;
+}
+
+
+/********************************************/
+/*Dark Yellow Hover on equal button*/
+#btn_eq:hover{
+    background-color: #fec100;
+}
+
+/*Gray Hover on all buttons except the yellow one*/
+input[type="button"]:not(#btn_eq):hover {
+  background-color: #d1d1d1;
+}
